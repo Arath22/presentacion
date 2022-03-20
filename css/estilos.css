@@ -32,16 +32,58 @@ main {
 }
 
 #hab{
-	border-style: solid;
-	border-width: thin;
+	position: relative;
+	height: 315px;
+	width: auto;
+	overflow: hidden;
+	border-radius: 6px;
+	box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
 	transition: all 500ms ease-out;
 }
 
-#hab img:hover{
+#hab figure .capa{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(112, 112, 112, 0.6);
 	transition: all 500ms ease-out;
-	transform: scale(1.1);
+	opacity: 0;
+	text-align: center;
+	visibility: visible;
 }
 
+#hab figure:hover > .capa{
+	opacity: 1;
+	visibility: visible;
+}
+
+#hab figure:hover > .capa h3{
+	margin-top: 70px;
+	margin-bottom: 15px;
+}
+
+#hab figure:hover > img{
+	transition: all 500ms ease-out;
+	transform: scale(1.2);
+}
+
+#hab figure .capa h3{
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 120px;
+	transition: all 500ms ease-out;
+	margin-top: 30px;
+}
+
+#hab figure .capa p{
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.5;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
+}
 
 /*Contacto*/
 
@@ -60,7 +102,7 @@ main {
 	margin: auto;
 }
 
-.form-register h4{
+.form-register h3{
     font-size: 22px;
     margin-bottom: 20px;
 }
