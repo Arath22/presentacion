@@ -6,7 +6,11 @@
 
 #foto{
 	transition: all 500ms ease-out;
-	border-radius: 10cm;
+	
+}
+
+.desc{
+	font-size: 5mm;
 }
 
 #foto img:hover{

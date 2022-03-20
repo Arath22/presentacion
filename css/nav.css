@@ -1,7 +1,7 @@
 #headnav {
   background-color: rgb(0, 0, 0);
   height: 100px;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
